@@ -8,11 +8,14 @@
   <title>Bikcraft - Bicicletas Elétricas</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
 
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -34,22 +37,22 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao" href="./bicicletas.html">Escolha a sua</a>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-5 fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="botao fadeInDown" data-anime="600" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <picture>
+      <picture data-anime="800" class="fadeInDown">
         <source media="(max-width:800px)" srcset="./img/bicicletas/nimbus.jpg">
         <img src="./img/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta">
       </picture>
     </div>
   </main>
-  <article class="bicicletas-lista">
+  <article class="bicicletas-lista fadeInLeft" data-anime="800">
     <h2 class="container font-1-xxl">
       escolha a sua<span class="cor-p1">.</span>
     </h2>
 
-    <ul>
+    <ul class="fadeInDown" data-anime="400">
       <li>
         <a href="./bicicletas/magic.html">
           <img src="./img/bicicletas/magic-home.jpg" width="920" height="1040" alt="Bicicleta preta">
@@ -79,12 +82,12 @@
     <div class="tecnologia container">
       <div class="tecnologia-conteudo">
         <span class="font-2-l-b cor-5">Tecnologia Avançada</span>
-        <h2 class="font-1-xxl cor-0">você escolhe as suas cores e componentes<span class="cor-p1">.</span></h2>
-        <p class="font-2-l cor-5">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
+        <h2 class="font-1-xxl cor-0 fadeInDown" data-anime="200">você escolhe as suas cores e componentes<span class="cor-p1">.</span></h2>
+        <p class="font-2-l cor-5 fadeInDown" data-anime="400">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas cores.</p>
 
-        <a class="link" href="./bicicletas.html">Escolha um modelo</a>
+        <a class="link fadeInDown" data-anime="800" href="./bicicletas.html">Escolha um modelo</a>
 
-        <div class="tecnologia-vantagens">
+        <div class="tecnologia-vantagens fadeInDown" data-anime="800">
           <div>
             <img src="./img/icones/eletrica.svg" width="24" height="24" alt="">
             <h3 class="font-1-m cor-0">Motor Elétrico</h3>
@@ -104,7 +107,7 @@
     </div>
   </article>
 
-  <section class="parceiros" aria-label="Nossos parceiros">
+  <section class="parceiros fadeInUp" data-anime="200" aria-label="Nossos parceiros">
     <h2 class="container font-1-xxl">nossos parceiros<span class="cor-p1">.</span></h2>
 
     <ul>
@@ -122,7 +125,7 @@
     <div>
       <img src="./img/fotos/depoimento.jpg" width="1560" height="1360" alt="Pessoa pedalando uma bicicleta bikcraft">
     </div>
-    <div class="depoimento-conteudo">
+    <div class="depoimento-conteudo fadeInLeft" data-anime="400">
       <blockquote class="font-1-xl cor-p5">
         <p>Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo à todos que amo.</p>
       </blockquote>
@@ -132,8 +135,8 @@
 
   <article class="seguros-bg">
     <div class="seguros container">
-      <h2 class="font-1-xxl cor-0">seguros<span class="cor-p1">.</span></h2>
-      <div class="seguros-item">
+      <h2 class="font-1-xxl cor-0 fadeInDown" data-anime="200">seguros<span class="cor-p1">.</span></h2>
+      <div class="seguros-item fadeInLeft" data-anime="200">
         <h3 class="prata font-1-xl cor-6">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -145,7 +148,7 @@
         <a class="botao secundario" href="./orcamento.html">Inscreva-se</a>
       </div>
 
-      <div class="seguros-item">
+      <div class="seguros-item fadeInRight" data-anime="400">
         <h3 class="prata font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-0">R$ 299 <span class="font-1-xs cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -198,6 +201,8 @@
       <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
